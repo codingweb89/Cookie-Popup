@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background: #D2042D;
+}
+
+.cookiebg {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font: 0.9em sans-serif;
+    line-height: 1.5;
+    border-radius: 10px;
+    transform: translateX(-500px);
+    transition: 0.5s;
+}
+
+.hd {
+    display: flex;
+    align-items: center;
+}
+
+.hd img {
+    width: 50px;
+}
+
+.hd span {
+    font-size: 2em;
+    font-weight: 500;
+    margin-left: 5px;
+    color: #D2042D;
+}
+
+.cookiebg a {
+    color: #D2042D;
+    text-decoration: none;
+}
+
+.cookiebg button {
+    padding: 13px 0;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #D2042D;
+    border-radius: 3px;
+    color: #D2042D;
+}
+
+.cookiebg button.f1 {
+    border: none;
+    background: #D2042D;
+    color: #fff;
+}
+
+.cookiebg.appear {
+    transform: translateX(0);
+}

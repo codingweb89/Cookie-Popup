@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Popup</title>
+</head>
+<body>
+
+<div class="cookiebg">
+    <div class="hd"><img src="cookie-fill.png" alt=""> <span>We value your privacy</span></div>
+    <p>We use cookies to enhance your browsing experience, serve personalized ads or content and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="">Cookie Policy</a></p>
+    <button class="f1">Accept All</button>
+    <button>Customize</button>
+    <button class="reject">Reject All</button>
+</div>
+
+<script>
+
+    setTimeout(() => {
+        document.querySelector(".cookiebg").classList.add("appear");
+    }, 2000);
+
+    document.querySelector(".reject").addEventListener("click", e => {
+        document.querySelector(".cookiebg").classList.remove("appear");
+    })
+
+
+</script>
+
+</body>
+</html>
